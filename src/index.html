@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <h1>Посты</h1>
+            <form data-set="form">
+                <label for="nameField">Текст</label>
+                <input data-set="post-title-input" type="text" placeholder="Текст..." id="nameField">
+                <button data-action="submit" type="submit">Добавить</button>
+            </form>
+        </div>
+        <div class="container">
+            <div data-set="loader" class="loader"></div>
+            <ul data-set="posts" class="posts"></ul>
+        </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
